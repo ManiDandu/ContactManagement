@@ -1,0 +1,7 @@
+﻿{
+  "ContactInformation": [
+    {"ContactID": 1, "FirstName": "Mani","LastName": "Dandu","EMail": "test@test.com","PhoneNumber": "1","Status": "Active"},
+    { "ContactID": 2,"FirstName": "Test","LastName": "1","EMail": "test1@test.com","PhoneNumber": "2","Status": "Active"},
+    { "ContactID": 3,"FirstName": "Test2","LastName": "2","EMail": "test2@test.com","PhoneNumber": "3","Status": "Active"}
+  ]
+}

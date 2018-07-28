@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement", "ContactManagement\ContactManagement.csproj", "{2EB4C6E3-8FB1-47B6-883F-22649447B739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.Tests", "ContactManagement.Tests\ContactManagement.Tests.csproj", "{24013738-DE2F-4D5F-8834-462BC4DDFFBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagementWeb", "ContactManagementWeb\ContactManagementWeb.csproj", "{25954DA1-9742-4500-8BDD-32C3F6ECBC58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EB4C6E3-8FB1-47B6-883F-22649447B739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB4C6E3-8FB1-47B6-883F-22649447B739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB4C6E3-8FB1-47B6-883F-22649447B739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB4C6E3-8FB1-47B6-883F-22649447B739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24013738-DE2F-4D5F-8834-462BC4DDFFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24013738-DE2F-4D5F-8834-462BC4DDFFBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24013738-DE2F-4D5F-8834-462BC4DDFFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24013738-DE2F-4D5F-8834-462BC4DDFFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25954DA1-9742-4500-8BDD-32C3F6ECBC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25954DA1-9742-4500-8BDD-32C3F6ECBC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25954DA1-9742-4500-8BDD-32C3F6ECBC58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

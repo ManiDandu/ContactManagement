@@ -1,0 +1,45 @@
+<form class="con-form" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <input type="hidden" name="ContactID" #ContactID="ngModel" [(ngModel)]="contactService.selectedContact.ContactID">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input class="form-control" name="FirstName" #FirstName="ngModel" [(ngModel)]="contactService.selectedContact.FirstName"
+                   placeholder="First Name" required>
+            <div class="validation-error" *ngIf="FirstName.invalid && FirstName.touched">This Field is Required.</div>
+        </div>
+        <div class="form-group col-md-6">
+            <input class="form-control" name="LastName" #LastName="ngModel" [(ngModel)]="contactService.selectedContact.LastName" placeholder="Last Name"
+                   required>
+            <div class="validation-error" *ngIf="LastName.invalid && LastName.touched">This Field is Required.</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="EMail" #EMail="ngModel" [(ngModel)]="contactService.selectedContact.EMail" placeholder="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" required>
+        <div class="validation-error" *ngIf="EMail.invalid && EMail.touched">Invalid Email.</div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input class="form-control" name="PhoneNumber" #PhoneNumber="ngModel" [(ngModel)]="contactService.selectedContact.PhoneNumber" type="number" placeholder="Phone Number" required>
+            <div class="validation-error" *ngIf="PhoneNumber.invalid && PhoneNumber.touched">This Field is Required.</div>
+        </div>
+        <div class="form-group col-md-6">
+            <select class="form-control" name="Status" [(ngModel)]="contactService.selectedContact.Status">
+                <option *ngFor="let status of statuses"  [value]="status">
+                    {{status}}
+                </option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-8">
+            <button [disabled]="!contactForm.valid" type="submit" class="btn btn-lg btn-block btn-info">
+                <i class="fa fa-floppy-o"></i> Submit
+            </button>
+        </div>
+        <div class="form-group col-md-4">
+            <button type="button" class="btn btn-lg btn-block btn-secondary" (click)="resetForm(contactForm)">
+                <i class="fa fa-repeat"></i> Reset
+            </button>
+        </div>
+    </div>
+</form>
